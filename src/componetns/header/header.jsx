@@ -1,6 +1,24 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import styled from 'styled-components'
+import FavIcon from '../favIcon/FavIcon';
 const Header = () => {
+    const [value, setValue] = useState()
+    const ref = useRef(null)
+    const getvalue = ({ target, key }) => {
+        if (key === 'Enter') {
+            setValue(target.value)
+            const e = document.querySelector(`#${target.value}`)
+            e.scrollIntoView({ behavior: 'smooth' })
+            console.log(e);
+
+        }
+
+    }
+    const ishla = () => {
+
+
+    }
+
     return (
         <Wrapper>
             <nav className="navbar p-3 navbar-expand-lg bg-dark">
@@ -17,13 +35,13 @@ const Header = () => {
                             <li className="nav-item">
                                 <a className="nav-link text-light" href="#">Link</a>
                             </li>
-
-
                         </ul>
-                        <form className="d-flex" role="search">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success text-light" type="submit">Search</button>
-                        </form>
+                        <div className='form'>
+                            <div className=" d-flex" role="submit">
+                                <input className="form-control me-2" onKeyDown={props => getvalue(props)} type="search" placeholder="Search" />
+                                <button onClick={ishla} className="btn btn-outline-success text-light" type="button">Search</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -39,9 +57,6 @@ const Header = () => {
 export default Header;
 const Wrapper = styled.div`
     height: 100vh;
-    nav{
-        color: white;
-    }
     .header{
         padding: 150px 100px;
     }

@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import favIconImage from '../images/faviIcon.png'
 const FavIcon = () => {
     return (
-        <Wrapper>
+        <Wrapper id='favicon'>
             <div>
-                <h1 className=''>FavIcon</h1>
+                <h1>FavIcon</h1>
                 <p>You can make any text an icon and download it in any size.</p>
                 <a href="https://favicon.io/" target='_blank'>go to link</a>
             </div>
@@ -28,7 +28,6 @@ const Wrapper = styled.div`
         h1{
             color: white;
             font-weight: 600;
-            font-size: $font-size-base;
             margin: 0;
         }
         p{

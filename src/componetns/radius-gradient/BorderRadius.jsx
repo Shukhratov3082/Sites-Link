@@ -1,24 +1,24 @@
 import React from 'react';
 import styled from 'styled-components'
-import SiteImg from '../images/colorSite.png'
-const ColorGeneration = () => {
+import borderIcon from '../images/border-radius.png'
+const Radius = () => {
     return (
-        <Wrapper id='color'>
+        <Wrapper>
             <div>
-                <h1>Color generation</h1>
-                <p>You can search for different colors and get the code</p>
-                <a href="https://coolors.co/" target='_blank'>go to link</a>
+                <h1>Border Radius Gradient</h1>
+                <p>This is a border radius generation where you can choose any shape.</p>
+                <a href="https://9elements.github.io/fancy-border-radius/#27.59.63.44--." target='_blank'>go to link</a>
             </div>
-            <img src={SiteImg} alt="" />
+            <img src={borderIcon} alt="" />
         </Wrapper>
     );
 }
 
-export default ColorGeneration;
+export default Radius;
 const Wrapper = styled.div`
     height: 100vh;
     padding: 100px;
-    background-color: #cc5ed0;
+    background-color: #6c15d6;
     display: flex;
     align-items: center;
     div{
@@ -38,9 +38,15 @@ const Wrapper = styled.div`
             font-size: 20px;
             font-weight: 600;
             color: #00ffde;
+            padding: 14px 10px;
+            background: rgb(201,0,255);
+            animation: morph 3s ease-in-out infinite both alternate;
             &:hover{
-            color: #0b5cff;
-                
+                color: #00a6ff;      
+            }
+            @keyframes morph {
+                0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} 
+                100% {border-radius: 40% 60%;} 
             }
         }
     }

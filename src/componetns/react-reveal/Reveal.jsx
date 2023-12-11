@@ -1,24 +1,24 @@
 import React from 'react';
 import styled from 'styled-components'
-import SiteImg from '../images/colorSite.png'
-const ColorGeneration = () => {
+import revealIcon from '../images/revealIcon.png'
+const Reveal = () => {
     return (
-        <Wrapper id='color'>
+        <Wrapper>
             <div>
-                <h1>Color generation</h1>
-                <p>You can search for different colors and get the code</p>
-                <a href="https://coolors.co/" target='_blank'>go to link</a>
+                <h1>React Reveal</h1>
+                <p>React Reveal is an animation framework, It can be used to create various cool reveal on scroll animations in your application</p>
+                <a href="https://www.react-reveal.com/" target='_blank'>go to link</a>
             </div>
-            <img src={SiteImg} alt="" />
+            <img src={revealIcon} alt="" />
         </Wrapper>
     );
 }
 
-export default ColorGeneration;
+export default Reveal;
 const Wrapper = styled.div`
     height: 100vh;
     padding: 100px;
-    background-color: #cc5ed0;
+    background-color: #2815d6;
     display: flex;
     align-items: center;
     div{
@@ -37,9 +37,9 @@ const Wrapper = styled.div`
             text-decoration: none;
             font-size: 20px;
             font-weight: 600;
-            color: #00ffde;
+            color: #ffbe0b;
             &:hover{
-            color: #0b5cff;
+            color: #f48c06;
                 
             }
         }

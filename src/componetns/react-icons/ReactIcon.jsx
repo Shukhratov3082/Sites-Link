@@ -1,24 +1,24 @@
 import React from 'react';
 import styled from 'styled-components'
-import SiteImg from '../images/colorSite.png'
-const ColorGeneration = () => {
+import reactIcons from '../images/reactIcons.png'
+const ReactIcon = () => {
     return (
-        <Wrapper id='color'>
+        <Wrapper>
             <div>
-                <h1>Color generation</h1>
-                <p>You can search for different colors and get the code</p>
-                <a href="https://coolors.co/" target='_blank'>go to link</a>
+                <h1>React Icons</h1>
+                <p>Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.</p>
+                <a href="https://react-icons.github.io/react-icons/" target='_blank'>go to link</a>
             </div>
-            <img src={SiteImg} alt="" />
+            <img src={reactIcons} alt="" />
         </Wrapper>
     );
 }
 
-export default ColorGeneration;
+export default ReactIcon;
 const Wrapper = styled.div`
     height: 100vh;
     padding: 100px;
-    background-color: #cc5ed0;
+    background-color: #6c15d6;
     display: flex;
     align-items: center;
     div{
@@ -39,7 +39,7 @@ const Wrapper = styled.div`
             font-weight: 600;
             color: #00ffde;
             &:hover{
-            color: #0b5cff;
+            color: #00a6ff;
                 
             }
         }

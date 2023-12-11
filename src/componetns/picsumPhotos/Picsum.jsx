@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import PicsumImage from '../images/picsum.png'
 const Picsum = () => {
     return (
-        <Wrapper className='container-fluid'>
+        <Wrapper id='picsum'>
             <div>
                 <h1>Random Photos</h1>
                 <p>Here you can take random photos using URL, Where you can change the width and height using the URL</p>
