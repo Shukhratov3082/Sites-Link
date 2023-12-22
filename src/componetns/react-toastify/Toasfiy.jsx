@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import toastifyIcon from '../images/toastifyIcon.png'
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Toastify = () => {
     const myFunction = () => {
