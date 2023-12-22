@@ -73,7 +73,8 @@ const Header = () => {
 
 export default Header;
 const Wrapper = styled.div`
-    height: 100vh;
+    padding: calc(var(--index) * 5) calc(var(--index) * 2);
+    height: calc(100vh + 72px);
     nav{
         position: fixed;
         top: 0;
@@ -85,8 +86,7 @@ const Wrapper = styled.div`
         }
     }
     .head__container{
-
-        padding: 150px 100px;
+        padding: calc(var(--index) * 2);
     }
     #list{
         min-width:100px;

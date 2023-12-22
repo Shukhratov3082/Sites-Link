@@ -34,11 +34,7 @@ const Toastify = () => {
 
 export default Toastify;
 const Wrapper = styled.div`
-    height: 100vh;
-    padding: 100px;
     background-color: #f77f00;
-    display: flex;
-    align-items: center;
     div{
         width: 50%;
         font-family: sans-serif;
@@ -68,25 +64,10 @@ const Wrapper = styled.div`
         }
         a{
             text-decoration: none;
-            font-size: 20px;
             font-weight: 600;
             color: #023047;
-            &:hover{
-            color: #457b9d;
-                
-            }
+            &:hover{color: #457b9d;}
         }
     }
-    img{
-        width: 50%;
-        background-position: center;
-        border: 1px solid white;
-        border-radius: 12px;
-        object-fit: contain;
-        box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d, 0 -6px 16px -6px #00000008;
-      
-    }
-   
-    
 `
 
