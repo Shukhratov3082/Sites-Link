@@ -7,7 +7,7 @@ const Radius = () => {
             <div>
                 <h1>Border Radius Gradient</h1>
                 <p>This is a border radius generation where you can choose any shape.</p>
-                <a href="https://9elements.github.io/fancy-border-radius/#27.59.63.44--." target='_blank'>go to link</a>
+                <a href="https://9elements.github.io/fancy-border-radius/#27.59.63.44--." target='_blank' rel="noopener">go to link</a>
             </div>
             <img src={borderIcon} alt="" />
         </Wrapper>

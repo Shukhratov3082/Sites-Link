@@ -7,7 +7,7 @@ const Swiper = () => {
             <div>
                 <h1>React Swiper</h1>
                 <p>Swiper is a free and open source mobile touch slider with hardware accelerated transitions and native behavior</p>
-                <a href="https://swiperjs.com/" target='_blank'>go to link</a>
+                <a href="https://swiperjs.com/" target='_blank' rel="noopener">go to link</a>
             </div>
             <img src={swiperBg} alt="" />
         </Wrapper>

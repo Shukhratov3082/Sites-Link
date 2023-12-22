@@ -7,7 +7,7 @@ const ReactIcon = () => {
             <div>
                 <h1>React Icons</h1>
                 <p>Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.</p>
-                <a href="https://react-icons.github.io/react-icons/" target='_blank'>go to link</a>
+                <a href="https://react-icons.github.io/react-icons/" target='_blank' rel="noopener">go to link</a>
             </div>
             <img src={reactIcons} alt="" />
         </Wrapper>
