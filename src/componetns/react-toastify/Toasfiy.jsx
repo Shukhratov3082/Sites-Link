@@ -36,7 +36,6 @@ export default Toastify;
 const Wrapper = styled.div`
     background-color: #f77f00;
     div{
-        width: 50%;
         font-family: sans-serif;
         transition:  .3s ease;
         color: white;
@@ -45,6 +44,7 @@ const Wrapper = styled.div`
             margin: 0;
         }
         .hidden {
+            display: block;
             width: 28vw;
             opacity: 0;
             max-height: 0;
@@ -52,10 +52,9 @@ const Wrapper = styled.div`
         }
 
         .visible {
-            display: inline-block;
-            width: 28vw;
+            display: block;
             opacity: 1;
-            max-height: 100px;
+            height: auto;
             transition:  0.5s ease;
         }
 

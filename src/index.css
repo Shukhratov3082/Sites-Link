@@ -49,6 +49,11 @@ body > div > div > img{
   object-fit: cover;
   box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d, 0 -6px 16px -6px #00000008;  
 }
+.Toastify{
+  height: auto;
+  padding: 0;
+  
+}
 @media (max-width: 800px) {
   body > div > div{
     display: inline-block;
@@ -68,6 +73,9 @@ body > div > div > img{
   }
   body > div > div > img{
     width: 100%; 
+  }
+  .visible, .hidden{
+    display: inline-block;
   }
   img:hover{
     transform: none;
