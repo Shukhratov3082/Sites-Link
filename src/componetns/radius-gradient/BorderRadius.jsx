@@ -36,6 +36,11 @@ const Wrapper = styled.div`
                 100% {border-radius: 40% 60%;} 
             }
         }
+        @media (max-width:800px){
+            p{
+                margin-bottom: 20px;
+            }
+        }
     }
 `
 

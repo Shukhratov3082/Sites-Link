@@ -64,6 +64,7 @@ const Wrapper = styled.div`
         }
         a{
             text-decoration: none;
+            font-size:calc(var(--index) * 1.6);
             font-weight: 600;
             color: #023047;
             &:hover{color: #457b9d;}
