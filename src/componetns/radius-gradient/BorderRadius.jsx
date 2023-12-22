@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import borderIcon from '../images/border-radius.png'
 const Radius = () => {
     return (
-        <Wrapper>
+        <Wrapper id='border-radius'>
             <div>
                 <h1>Border Radius Gradient</h1>
                 <p>This is a border radius generation where you can choose any shape.</p>

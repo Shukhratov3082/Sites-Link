@@ -16,7 +16,6 @@ const FavIcon = () => {
 
 export default FavIcon;
 const Wrapper = styled.div`
-   $h1-font-size:                $font-size-base * 2.5;
     height: 100vh;
     padding: 100px;
     background-color: #0096c7;

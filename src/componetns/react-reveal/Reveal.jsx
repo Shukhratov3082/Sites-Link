@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import revealIcon from '../images/revealIcon.png'
 const Reveal = () => {
     return (
-        <Wrapper>
+        <Wrapper id='react-reveal'>
             <div>
                 <h1>React Reveal</h1>
                 <p>React Reveal is an animation framework, It can be used to create various cool reveal on scroll animations in your application</p>

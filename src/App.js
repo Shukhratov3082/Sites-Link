@@ -6,32 +6,26 @@ import MakeText from './componetns/makeText/MakeText';
 import Picsum from './componetns/picsumPhotos/Picsum';
 import Reveal from './componetns/react-reveal/Reveal';
 import Toastify from './componetns/react-toastify/Toasfiy';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import Radius from './componetns/radius-gradient/BorderRadius';
 import ReactIcon from './componetns/react-icons/ReactIcon';
-
-// import { Routes, Route } from 'react-router-dom'
+import Swiper from './componetns/swiper/Swiper';
+import Neumorphism from './componetns/Neumorphism/Neumorphism';
 const App = () => {
   return (
-    // <Routes>
-    //   <Route path='/header' element={<Header />}/>
-    //   <Route path='/favicon' element={<FaviIcon/>}/>
-    //   <Route path='/color' element={<ColorGeneration />}/>
-    //   <Route path='/maketext' element={<MakeText />}/>
-    //   <Route path='/picsum' element={<Picsum />}/>
-    // </Routes>
     <>
       <Header />
       <FaviIcon />
       <ColorGeneration />
       <MakeText />
       <Picsum />
-      <Radius/>
-      <Reveal/>
-      <Toastify/>
-      <ReactIcon/>
+      <Radius />
+      <Reveal />
+      <Toastify />
+      <ReactIcon />
+      <Swiper />
+      <Neumorphism />
       <ToastContainer />
-
     </>
   );
 }

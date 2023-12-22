@@ -1,24 +1,24 @@
 import React from 'react';
 import styled from 'styled-components'
-import makeTextImage from '../images/maketext.png'
-const MakeText = () => {
+import neumorphism from '../images/neumorphism.png'
+const Neumorphism = () => {
     return (
-        <Wrapper id='text-generation'>
+        <Wrapper id='neumorphism'>
             <div>
-                <h1>Text Generation</h1>
-                <p>This is the generation of text where different colors and designs</p>
-                <a href="https://maketext.io/" target='_blank'>go to link</a>
+                <h1>Neumorphism</h1>
+                <p>Generate Soft-UI CSS code, there you can create a box with changing radius, size, blur, and in this link you can find different CSS codes similar to the cards buttons inputs.</p>
+                <a href="https://neumorphism.io/" target='_blank'>go to link</a>
             </div>
-            <img src={makeTextImage} alt="" />
+            <img src={neumorphism} alt="" />
         </Wrapper>
     );
 }
 
-export default MakeText;
+export default Neumorphism;
 const Wrapper = styled.div`
     height: 100vh;
     padding: 100px;
-    background-color: #6c15d6;
+    background-color: #594d4d;
     display: flex;
     align-items: center;
     div{

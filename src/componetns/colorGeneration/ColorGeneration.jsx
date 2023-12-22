@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import SiteImg from '../images/colorSite.png'
 const ColorGeneration = () => {
     return (
-        <Wrapper id='color'>
+        <Wrapper id='color-generation'>
             <div>
                 <h1>Color generation</h1>
                 <p>You can search for different colors and get the code</p>

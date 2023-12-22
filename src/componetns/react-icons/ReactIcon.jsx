@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import reactIcons from '../images/reactIcons.png'
 const ReactIcon = () => {
     return (
-        <Wrapper>
+        <Wrapper id='react-icon'>
             <div>
                 <h1>React Icons</h1>
                 <p>Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.</p>

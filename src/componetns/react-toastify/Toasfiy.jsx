@@ -11,19 +11,19 @@ const Toastify = () => {
         toast.success("that's how it works")
     };
     return (
-        <Wrapper>
+        <Wrapper id='react-toastify'>
             <div>
                 <h1>React Toastify</h1>
                 <p>React-Toastify allows you to add notifications to your app with ease. it used for animated notifications</p>
                 <div>
                     <button className='btn btn-warning' onClick={myFunction}>How to use</button>
-                    <p id='more' className="hidden"><ol>
+                    <ol id='more' className="hidden">
                         <li>npm i react-toastify</li>
                         <li>import &#123;ToastContainer, toast&#125; from 'react-toastify';</li>
                         <li>import 'react-toastify/dist/ReactToastify.css';</li>
                         <li>add to event toast.success("that's how it works")</li>
                         <li>must add &lt;ToastContainer&gt; in html</li>
-                    </ol></p>
+                    </ol>
                     <a href="https://www.npmjs.com/package/react-toastify#SnippetTab" target='_blank'>go to link</a>
                 </div>
             </div>
@@ -43,14 +43,10 @@ const Wrapper = styled.div`
         width: 50%;
         font-family: sans-serif;
         transition:  .3s ease;
+        color: white;
         h1{
-            color: white;
             font-weight: 600;
             margin: 0;
-        }
-        p{
-            width: 80%;
-            color: white;
         }
         .hidden {
             width: 28vw;
@@ -60,6 +56,7 @@ const Wrapper = styled.div`
         }
 
         .visible {
+            display: inline-block;
             width: 28vw;
             opacity: 1;
             max-height: 100px;

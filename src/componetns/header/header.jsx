@@ -1,30 +1,41 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components'
-import FavIcon from '../favIcon/FavIcon';
 const Header = () => {
-    const [value, setValue] = useState()
-    const ref = useRef(null)
-    const getvalue = ({ target, key }) => {
-        if (key === 'Enter') {
-            setValue(target.value)
-            const e = document.querySelector(`#${target.value}`)
-            e.scrollIntoView({ behavior: 'smooth' })
-            console.log(e);
+    const [inputValue, setInputValue] = useState('');
+    const [listVisible, setListVisible] = useState(false);
 
+    const items = ["color generation", "react icon", "react toastify", "neumorphism", "swiper", "react reveal", "border radius", "picsum", "text generation", "favIcon"];
+    const filtered = items.filter(item => item);
+    const [filteredItems, setFilteredItems] = useState(filtered);
+
+    const handleInputChange = (event) => {
+        const value = event.target.value;
+        setInputValue(value);
+        const filtered = items.filter(item => item.toLowerCase().includes(value.toLowerCase()));
+        setFilteredItems(filtered);
+        setListVisible(filtered.length > 0);// agar value itemga mos kemasa listVisible false bo'ladi
+    };
+
+    const KeyDown = (event) => {
+        if (event.key === 'Enter') {
+            const matchingItems = items.filter(item => item.toLowerCase().includes(inputValue.toLowerCase()));
+            if (matchingItems.length > 0) {
+                console.log(matchingItems[0].toLowerCase().replace(/ /g, '-'));
+                const element = document.getElementById(matchingItems[0].toLowerCase().replace(/ /g, '-'));
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            } else {
+                alert(`this "${inputValue}" element not found`);
+            }
         }
-
-    }
-    const ishla = () => {
-
-
-    }
-
+    };
     return (
         <Wrapper>
             <nav className="navbar p-3 navbar-expand-lg bg-dark">
                 <div className="container-fluid">
                     <a className="navbar-brand text-light" href="#">StyledSite</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button className="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -38,17 +49,23 @@ const Header = () => {
                         </ul>
                         <div className='form'>
                             <div className=" d-flex" role="submit">
-                                <input className="form-control me-2" onKeyDown={props => getvalue(props)} type="search" placeholder="Search" />
-                                <button onClick={ishla} className="btn btn-outline-success text-light" type="button">Search</button>
+                                <input className="form-control me-2" onBlur={() => setListVisible(false)} onFocus={() => setListVisible(true)} onChange={handleInputChange} onKeyDown={KeyDown} type="search" placeholder="Search" />
+                                <button className="btn btn-outline-success text-light" type="button">Search</button>
+                                {listVisible && (
+                                    <ul id='list'>
+                                        {filteredItems.map((item, index) => (
+                                            <li key={index}>{item}</li>
+                                        ))}
+                                    </ul>
+                                )}
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
-            <div className='header'>
-                <h1>Css Styles site</h1>
-                <p>This site is for learning styles and getting code for different styles</p>
-
+            <div className='head__container'>
+                <h1>Here you can find various links</h1>
+                <p>This site is designed to explore different libraries and learn cool things</p>
             </div>
         </Wrapper>
     );
@@ -57,8 +74,39 @@ const Header = () => {
 export default Header;
 const Wrapper = styled.div`
     height: 100vh;
-    .header{
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        input{
+            position: relative;
+        }
+    }
+    .head__container{
+
         padding: 150px 100px;
+    }
+    #list{
+        min-width:100px;
+        width: auto;        
+        height: 150px;
+        overflow-y: auto;
+        list-style: none;
+        background: #ffffff;
+        font-weight:600;
+        border: 1px solid #b3b0b08f;
+        border-radius: 2px;
+        position: absolute;
+        top: 90%;
+        bottom: -150px;
+        color: #201414;
+        padding: 5px;
+        li{
+            border-bottom:1px solid gray;
+            cursor: pointer;
+        }
     }
 
 `
