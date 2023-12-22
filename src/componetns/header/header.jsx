@@ -48,7 +48,7 @@ const Header = () => {
                             </li>
                         </ul>
                         <div className='form'>
-                            <div className=" d-flex" role="submit">
+                            <div className="d-flex">
                                 <input className="form-control me-2" onBlur={() => setListVisible(false)} onFocus={() => setListVisible(true)} onChange={handleInputChange} onKeyDown={KeyDown} type="search" placeholder="Search" />
                                 <button className="btn btn-outline-success text-light" type="button">Search</button>
                                 {listVisible && (
