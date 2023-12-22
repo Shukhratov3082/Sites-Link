@@ -7,7 +7,7 @@ const Neumorphism = () => {
             <div>
                 <h1>Neumorphism</h1>
                 <p>Generate Soft-UI CSS code, there you can create a box with changing radius, size, blur, and in this link you can find different CSS codes similar to the cards buttons inputs.</p>
-                <a href="https://neumorphism.io/" target='_blank' rel="noopener">go to link</a>
+                <a href="https://neumorphism.io/" target='_blank' rel="noopener noreferrer">go to link</a>
             </div>
             <img src={neumorphism} alt="" />
         </Wrapper>

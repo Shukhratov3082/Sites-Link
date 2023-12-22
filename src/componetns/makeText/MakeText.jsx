@@ -7,7 +7,7 @@ const MakeText = () => {
             <div>
                 <h1>Text Generation</h1>
                 <p>This is the generation of text where different colors and designs</p>
-                <a href="https://maketext.io/" target='_blank' rel="noopener">go to link</a>
+                <a href="https://maketext.io/" target='_blank' rel="noopener noreferrer">go to link</a>
             </div>
             <img src={makeTextImage} alt="" />
         </Wrapper>

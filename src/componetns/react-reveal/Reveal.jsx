@@ -7,7 +7,7 @@ const Reveal = () => {
             <div>
                 <h1>React Reveal</h1>
                 <p>React Reveal is an animation framework, It can be used to create various cool reveal on scroll animations in your application</p>
-                <a href="https://www.react-reveal.com/" target='_blank' rel="noopener">go to link</a>
+                <a href="https://www.react-reveal.com/" target='_blank' rel="noopener noreferrer">go to link</a>
             </div>
             <img src={revealIcon} alt="" />
         </Wrapper>

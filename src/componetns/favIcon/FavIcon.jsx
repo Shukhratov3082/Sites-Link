@@ -7,7 +7,7 @@ const FavIcon = () => {
             <div>
                 <h1>FavIcon</h1>
                 <p>You can make any text an icon and download it in any size.</p>
-                <a href="https://favicon.io/" target='_blank' rel="noopener">go to link</a>
+                <a href="https://favicon.io/" target='_blank' rel="noopener noreferrer">go to link</a>
             </div>
             <img src={favIconImage} alt="" />
         </Wrapper>

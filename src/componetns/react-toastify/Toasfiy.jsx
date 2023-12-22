@@ -24,7 +24,7 @@ const Toastify = () => {
                         <li>add to event toast.success("that's how it works")</li>
                         <li>must add &lt;ToastContainer&gt; in html</li>
                     </ol>
-                    <a href="https://www.npmjs.com/package/react-toastify#SnippetTab" target='_blank' rel="noopener">go to link</a>
+                    <a href="https://www.npmjs.com/package/react-toastify#SnippetTab" target='_blank' rel="noopener noreferrer">go to link</a>
                 </div>
             </div>
             <img src={toastifyIcon} alt="" />

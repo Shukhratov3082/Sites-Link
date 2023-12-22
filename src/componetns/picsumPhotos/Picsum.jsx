@@ -10,7 +10,7 @@ const Picsum = () => {
                 <h4>How it works</h4>
                 <p className='aboutWork'>https://picsum.photos/200/300 <br /> 200 its width 300 its height, the numbers like 200px and 300px <br />Every time you use this URL you will get a different image.</p>
                 <span>More information on the link</span>
-                <a href="https://picsum.photos/" target='_blank' rel="noopener">go to link</a>
+                <a href="https://picsum.photos/" target='_blank' rel="noopener noreferrer">go to link</a>
             </div>
             <img src={PicsumImage} alt="" />
         </Wrapper>

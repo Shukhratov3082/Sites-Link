@@ -7,7 +7,7 @@ const ColorGeneration = () => {
             <div>
                 <h1>Color generation</h1>
                 <p>You can search for different colors and get the code</p>
-                <a href="https://coolors.co/" target='_blank' rel="noopener">go to link</a>
+                <a href="https://coolors.co/" target='_blank' rel="noopener noreferrer">go to link</a>
             </div>
             <img src={SiteImg} alt="" />
         </Wrapper>
