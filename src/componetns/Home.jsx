@@ -17,12 +17,12 @@ const Home = () => {
         </p>
       </div>
       <div className="header__images ">
-        <img src={img1} alt="image" />
-        <img src={img2} alt="image" />
-        <img src={img3} alt="image" />
-        <img src={img4} alt="image" />
-        <img src={img5} alt="image" />
-        <img src={img6} alt="image" />
+        <img src={img1} alt="" />
+        <img src={img2} alt="" />
+        <img src={img3} alt="" />
+        <img src={img4} alt="" />
+        <img src={img5} alt="" />
+        <img src={img6} alt="" />
       </div>
     </Wrapper>
   );
