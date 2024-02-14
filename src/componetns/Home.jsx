@@ -16,7 +16,7 @@ const Home = () => {
           things
         </p>
       </div>
-      <div className="header__images">
+      <div className="header__images ">
         <img src={img1} alt="image" />
         <img src={img2} alt="image" />
         <img src={img3} alt="image" />
@@ -40,10 +40,9 @@ const Wrapper = styled.div`
 
   .header__images {
     width: 50%;
-    height: 100%;
-    align-content: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(140px, auto));
     gap: 15px;
     img {
       width: 100%;
