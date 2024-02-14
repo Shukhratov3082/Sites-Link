@@ -17,12 +17,12 @@ const Home = () => {
         </p>
       </div>
       <div className="header__images">
-        <img src={img1} alt="" />
-        <img src={img2} alt="" />
-        <img src={img3} alt="" />
-        <img src={img4} alt="" />
-        <img src={img5} alt="" />
-        <img src={img6} alt="" />
+        <img src={img1} alt="image" />
+        <img src={img2} alt="image" />
+        <img src={img3} alt="image" />
+        <img src={img4} alt="image" />
+        <img src={img5} alt="image" />
+        <img src={img6} alt="image" />
       </div>
     </Wrapper>
   );
@@ -40,7 +40,8 @@ const Wrapper = styled.div`
 
   .header__images {
     width: 50%;
-    height: auto;
+    height: 100%;
+    align-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 15px;
