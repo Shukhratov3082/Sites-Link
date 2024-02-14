@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import makeTextImage from '../images/maketext.png'
+import makeTextImage from '../../assets/images/maketext.png'
 const MakeText = () => {
     return (
         <Wrapper id='text-generation'>

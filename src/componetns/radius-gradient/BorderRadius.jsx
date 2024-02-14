@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import borderIcon from '../images/border-radius.png'
+import borderIcon from '../../assets/images/border-radius.png'
 const Radius = () => {
     return (
         <Wrapper id='border-radius'>

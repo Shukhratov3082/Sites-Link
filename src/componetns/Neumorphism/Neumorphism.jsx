@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import neumorphism from '../images/neumorphism.png'
+import neumorphism from '../../assets/images/neumorphism.png'
 const Neumorphism = () => {
     return (
         <Wrapper id='neumorphism'>

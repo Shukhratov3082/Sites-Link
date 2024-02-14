@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import swiperBg from '../images/swiper.png'
+import swiperBg from '../../assets/images/swiper.png'
 const Swiper = () => {
     return (
         <Wrapper id='swiper'>

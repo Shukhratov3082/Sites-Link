@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import reactIcons from '../images/reactIcons.png'
+import reactIcons from '../../assets/images/reactIcons.png'
 const ReactIcon = () => {
     return (
         <Wrapper id='react-icon'>
