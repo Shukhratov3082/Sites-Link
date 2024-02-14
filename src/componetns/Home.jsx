@@ -40,6 +40,7 @@ const Wrapper = styled.div`
 
   .header__images {
     width: 50%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 15px;
